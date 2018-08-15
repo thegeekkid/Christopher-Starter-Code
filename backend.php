@@ -15,8 +15,8 @@ if ( isset($_POST['first_name']) ) {
     */
     $URL = '';
 
-    //Redirect to page on successful submission (defaults to frontend.html):
-    $redirect = 'frontend.html?success=true';
+    //Redirect to page on successful submission (defaults to frontend.php):
+    $redirect = 'frontend.php?success=true';
 
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];

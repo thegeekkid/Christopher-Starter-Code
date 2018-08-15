@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <?php
+            if (isset($_GET['success'])) {
+                if ($_GET['success'] == 'true') {
+                    echo '<div id="success"><h2>Order received - we will be in touch shortly.</h2></div>';
+                }
+            }
+        ?>
         <form action="backend.php" method="post">
             <label for="first_name">First name:</label>
             <input type="text" id="first_name" name="first_name" />

@@ -7,3 +7,10 @@ input {
 textarea {
     display: block;
 }
+
+#success {
+    color: #00ff00;
+    border: 5px solid #00ff00;
+    text-align: center;
+    margin-bottom: 2em;
+}
