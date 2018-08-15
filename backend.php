@@ -32,13 +32,17 @@ if ( isset($_POST['first_name']) ) {
 
     $quote_amount = $_POST['quote_amount'];
 
+    $notes = $_POST['notes'];
+
     $description = "$first_name $last_name would like to renew $software.\r\n";
     $description .= "Renewal details:\r\n";
-    $description .= "AntiMalware software: $software";
-    $description .= "# of endpoints: $endpoints";
-    $description .= "# of servers: $servers";
-    $description .= "# of years: $years";
-    $description .= "They were quoted $quote_amount";
+    $description .= "AntiMalware software: $software \r\n";
+    $description .= "# of endpoints: $endpoints \r\n";
+    $description .= "# of servers: $servers \r\n";
+    $description .= "# of years: $years \r\n";
+    $description .= "They were quoted $quote_amount \r\n";
+    $description .= "Notes:\r\n";
+    $description .= $notes;
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,"https://$URL/api/v1/leads?api_key=$API_key");
