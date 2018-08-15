@@ -21,9 +21,9 @@
                 <option value="BitDefender">BitDefender</option>
             </select>
             <label for="endpoints">Number of endpoints:</label>
-            <input type="number" id="endpoints" name="endpoints" />
+            <input type="number" id="endpoints" name="endpoints" value="0" />
             <label for="servers">Number of servers:</label>
-            <input type="number" id="servers" name="servers" />
+            <input type="number" id="servers" name="servers" value="0" />
             <label for="years">Number of years:</label>
             <select id="years" name="years">
                 <option value="1">1 year</option>
@@ -36,5 +36,8 @@
             <textarea id="notes" name="notes"></textarea>
             <input type="submit" id="submit" name="submit" value="Submit Renewal" />
         </form>
+        <!--Add JQuery from the official CDN-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="js/quote_system.js"></script>
     </body>
 </html>
